@@ -425,6 +425,7 @@ function App() {
                       <input
                         value={tempProduct.origin_price} //
                         onChange={handleModalInputChange} //
+                        min="0"
                         name="origin_price"
                         id="origin_price"
                         type="number"
@@ -440,6 +441,7 @@ function App() {
                         value={tempProduct.price} //
                         onChange={handleModalInputChange} //
                         name="price"
+                        min="0"
                         id="price"
                         type="number"
                         className="form-control"
