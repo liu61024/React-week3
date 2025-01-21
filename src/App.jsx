@@ -185,7 +185,8 @@ function App() {
         }
       })
     } catch (error) {
-      alert("新增產品失敗");
+      alert("新增產品失敗，請填入必填資料");
+
     }
   }
 
@@ -200,7 +201,7 @@ function App() {
         }
       })
     } catch (error) {
-      alert("編輯產品失敗");
+      alert("編輯產品失敗，請填入必填資料");
     }
   }
 
@@ -501,7 +502,7 @@ function App() {
               <button type="button" onClick={handleCloseProductModal} className="btn btn-secondary">
                 取消
               </button>
-              <button type="button" onClick={handleUpdateProduct} className="btn btn-primary">
+              <button type="button" onClick={handleUpdateProduct} className="btn btn-success">
                 確認
               </button>
             </div>
